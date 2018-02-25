@@ -1,0 +1,11 @@
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  display: block;
+  width: 120px;
+  height: 30px;
+
+  background-image: url("https://raw.githubusercontent.com/android-soft-uni/02-Intents-Lifecycle/gh-pages/css/assets/soft-uni-logo.png");
+}

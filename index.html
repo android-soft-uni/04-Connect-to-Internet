@@ -7,7 +7,9 @@
 		<title>#AndroidSoftUni - Connect to Internet</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+    <link rel="stylesheet" href="css/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -33,7 +35,93 @@
 
         <!-- Slide --> 
         <section>
+          <h1>Questions</h1>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <h2>Udacity</h2>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <h2>86400</h2>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <h2>Steve jobs - Just ask</h2>
+        </section>
+
+        <!-- Slide --> 
+        <section>
           <h1>Connect to Internet</h1>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <h2>Message logging</h2>
+          <h3>display levels</h3>
+          <h4>Error, Warn, Info, Debug, Verbose</h4>
+        </section>
+
+        <!-- Slide -->
+        <section data-markdown data-background-color="#3F3F43">
+```java
+Log.x(String TAG, String message);
+```
+        </section>
+
+        <!-- Slide --> 
+        <section>
+          <h2>
+            <a href="https://developer.android.com/reference/android/util/Log.html" 
+              title="Logging" target="_blank">Logging</a>
+          </h2>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <h2>Sandwich Demo Project</h2>
+        </section>
+
+        <!-- Slide -->
+        <section>
+          <h2>Github Demo Project</h2>
+        </section>
+
+        <!-- Slide -->
+        <section data-markdown data-background-color="#3F3F43">
+```java
+final static String GITHUB_BASE_URL = "https://api.github.com/search/repositories";
+final static String PARAM_QUERY = "q";
+final static String PARAM_SORT = "sort";
+```
+        </section>
+
+        <!-- Slide -->
+        <section data-markdown data-background-color="#3F3F43">
+## Uri.Builder
+```java
+Uri builtUri = Uri.parse(GITHUB_BASE_URL)
+  .buildUpon()
+  .appendQueryParameter(PARAM_QUERY, githubSearchQuery)
+  .appendQueryParameter(PARAM_SORT, sortBy)
+  .build();
+```
+        </section>
+
+        <!-- Slide -->
+        <section data-markdown data-background-color="#3F3F43">
+## Android Uri
+```java
+URL url = null;
+try {
+  url = new URL(builtUri.toString());
+} catch (MalformedURLException e) {
+  e.printStackTrace();
+}
+```
         </section>
 
 			</div>
