@@ -9,3 +9,14 @@
 
   background-image: url("https://raw.githubusercontent.com/android-soft-uni/02-Intents-Lifecycle/gh-pages/css/assets/soft-uni-logo.png");
 }
+
+.java-class {
+  position: relative;
+
+  display: block;
+  padding: 25px;
+
+  border-radius: 25%;
+
+  border-color: 1px solid #ccc;
+}
